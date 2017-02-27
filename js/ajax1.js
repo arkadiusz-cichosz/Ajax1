@@ -1,10 +1,8 @@
-let url = 'http://api.icndb.com/jokes/random';
+const url = 'http://api.icndb.com/jokes/random';
 
-let button = document.getElementById('get-joke');
-let paragraph = document.getElementById('joke');
-button.addEventListener('click', function() {
-	getJoke();
-});
+const button = document.getElementById('get-joke');
+const paragraph = document.getElementById('joke');
+button.addEventListener('click', getJoke);
 
 function getJoke() {
 	let xhr = new XMLHttpRequest();
